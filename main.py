@@ -8,11 +8,14 @@ load_dotenv()
 token_api = os.getenv("TOKEN_KEY")
 
 conn = psycopg2.connect(
-    dbname=os.getenv("DB_NAME"),
-    host=os.getenv("DB_HOST"),
-    user=os.getenv("DB_USER"),
-    password=os.getenv("DB_PASSWORD"),
-    port=os.getenv("DB_PORT")) #переименовали 
+    dbname="tgbotusermy_3073",
+    user="tgbotusermy_3073",
+    password="postgres://tgbotusermy_9145:tegsJaHAQx7CISibv1Lmr59AL0b21Rt9v7JL3uncOAOuPCFE3HvyGzddKmyrYROZ@tgbotusermy-9145.postgresql.c.osc-fr1.scalingo-dbs.com:35118/tgbotusermy_9145?sslmode=prefer",
+    host="tgbotusermy-3073.postgresql.c.osc-fr1.scalingo-dbs.com",
+    port="34648",
+    sslmode="prefer",
+)
+
 
 conn.autocommit = True
 
